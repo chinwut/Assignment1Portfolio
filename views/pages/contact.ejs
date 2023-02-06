@@ -1,0 +1,62 @@
+<%- include ../layouts/header.ejs %>
+
+    <%- include ../layouts/nav_bar.ejs %>
+
+
+        <!-- Main Content -->
+        <main class="container">
+            <section id="contact" class="contact">
+            <div class="section-title">
+                <h2>Contact</h2>
+                <p>Thank you for visiting Code-Tim! 
+                    If you have any questions, comments, or feedback, please don't hesitate to reach out to us. 
+                    You can contact us at info@example.com or fill out the form on our Contact Us page. 
+                    We look forward to hearing from you!</p>
+            </div>
+
+            <div class="row" data-aos="fade-in">
+
+                <div class="col-lg-5 d-flex align-items-stretch">
+                    <div class="info">
+                        <div class="address">
+                            <h4>Location:</h4>
+                            <p>Bangkok, Thailand</p>
+                        </div>
+
+                        <div class="email">
+                            <h4>Email:</h4>
+                            <p>info@example.com</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                    <form  method="post" role="form" class="form-submit">
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="name">Your Name</label>
+                                <input type="text" name="name" class="form-control" id="name" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="name">Your Email</label>
+                                <input type="email" class="form-control" name="email" id="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Subject</label>
+                            <input type="text" class="form-control" name="subject" id="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Message</label>
+                            <textarea class="form-control" name="message" rows="10" required></textarea>
+                        </div>
+                        <div class="text-center"><button type="submit">Send Message</button></div>
+                    </form>
+                </div>
+            </div>
+            </section>
+        </main>
+
+        <%- include ../layouts/footer.ejs %>

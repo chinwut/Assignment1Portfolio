@@ -1,0 +1,184 @@
+.container.logo-slogan {
+  display: flex;
+}
+.logo {
+  margin: 22px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.logo img {
+  width: 100%;
+}
+.banner {
+	background-color: #F39800;
+  display: flex;
+}
+.slogan-text {
+  width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+	padding: 15px 25px 15px 4px;
+	color: #fff;
+  left: 80px;
+	font-size: 3em;
+	line-height: 1em;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.slogan-text span {
+	color: rgba(255, 255, 255, 0.4);
+	font-size: 0.4em;
+	line-height: 1.2em;
+	display: block;
+	margin-top: 10px;
+}
+.contact {
+  padding-bottom: 130px;
+}
+
+.contact .info {
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #149ddd;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #dff3fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 0;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #050d18;
+}
+
+.contact .info p {
+  padding: 0 0 10px 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #173b6c;
+}
+
+.contact .info .email p {
+  padding-top: 5px;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+  background: #149ddd;
+  color: #fff;
+}
+
+.contact .form-submit {
+  width: 100%;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .form-submit .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .form-submit .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .form-submit .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .form-submit .error-message br+br {
+  margin-top: 25px;
+}
+
+.contact .form-submit .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .form-submit .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .form-submit .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .form-submit .form-group {
+  margin-bottom: 15px;
+}
+
+.contact .form-submit label {
+  padding-bottom: 8px;
+}
+
+.contact .form-submit input,
+.contact .form-submit textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .form-submit input {
+  height: 44px;
+}
+
+.contact .form-submit textarea {
+  padding: 10px 15px;
+}
+
+.contact .form-submit button[type=submit] {
+  background: #149ddd;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .form-submit button[type=submit]:hover {
+  background: #37b3ed;
+}
+
