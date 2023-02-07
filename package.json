@@ -9,8 +9,8 @@
   "description": "Portfolio Site",
   "private": true,
   "scripts": {
-    "build": "netlify-lambda build express",
-    "start": "nodemon ./server.js"
+    "start:dev": "nodemon ./server.js",
+    "start": "node ./server.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.2.1",
