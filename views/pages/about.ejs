@@ -1,16 +1,50 @@
 <%- include ../layouts/header.ejs %>
 
-<%- include ../layouts/nav_bar.ejs %>
-  
-
-  <!-- Main Content -->
-  <main class="container">
-
-  </main>
-  
-<%- include ../layouts/footer.ejs %>
-  
+  <%- include ../layouts/nav_bar.ejs %>
 
 
+    <!-- Main Content -->
+    <main class="container">
 
+      <section id="about" class="about">
+        <div class="section-title">
+          <h2>About</h2>
+          <p>Hi, my name is Chinnawut Boonluyea. 
+            I am passionate about delivering high-quality, user-friendly websites that meet the needs of both businesses and users. I am always striving to stay up-to-date with the latest technologies and best practices in web development. 
+            Thank you for visiting my profile!
+          </p>
+        </div>
 
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/images/img-profile.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Full-stack Developer</h3>
+            <p class="fst-italic">
+              I am a Full-stack Developer with over 10 years of experience, based in Thailand. 
+            Throughout my career, I have worked on a variety of projects and have gained extensive knowledge and experience in both front-end and back-end web development. My expertise includes HTML, CSS, JavaScript, and Java (SpringBoots Framework). 
+            </p>
+            <div class="row about-info">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>28 May 1987</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Bangkok, Thailand</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master of Information Technology in Business</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>info@example.com</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%- include ../layouts/footer.ejs %>

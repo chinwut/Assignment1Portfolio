@@ -5,34 +5,60 @@
   margin: 22px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
+
 .logo img {
   width: 100%;
 }
+
+.section-title {
+  margin-top: 25px;
+}
+
 .banner {
-	background-color: #F39800;
+  background-color: #F39800;
   display: flex;
 }
+
 .slogan-text {
   width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-	padding: 15px 25px 15px 4px;
-	color: #fff;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px 25px 15px 4px;
+  color: #fff;
   left: 80px;
-	font-size: 3em;
-	line-height: 1em;
-	text-align: left;
-	text-transform: uppercase;
+  font-size: 3em;
+  line-height: 1em;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .slogan-text span {
-	color: rgba(255, 255, 255, 0.4);
-	font-size: 0.4em;
-	line-height: 1.2em;
-	display: block;
-	margin-top: 10px;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.4em;
+  line-height: 1.2em;
+  display: block;
+  margin-top: 10px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #000;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: orange;
+  bottom: 0;
+  left: 0;
 }
 .contact {
   padding-bottom: 130px;
@@ -96,56 +122,6 @@
   padding-bottom: 8px;
 }
 
-.contact .form-submit .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.contact .form-submit .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .form-submit .error-message br+br {
-  margin-top: 25px;
-}
-
-.contact .form-submit .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .form-submit .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .form-submit .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
 .contact .form-submit .form-group {
   margin-bottom: 15px;
 }
@@ -170,7 +146,7 @@
 }
 
 .contact .form-submit button[type=submit] {
-  background: #149ddd;
+  background: orange;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -180,5 +156,37 @@
 
 .contact .form-submit button[type=submit]:hover {
   background: #37b3ed;
+}.about .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #000;
 }
 
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.about .content ul strong {
+  margin-right: 10px;
+}
+
+.about .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #000;
+  line-height: 0;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+.row.about-info {
+  margin-bottom: 100px;
+}

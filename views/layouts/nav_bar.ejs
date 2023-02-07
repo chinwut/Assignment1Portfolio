@@ -6,31 +6,39 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="container collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a href="/" class="nav-link scrollto <%= (title === 'Home') ? 'active' : '' %>"><i class="bx bx-home"></i> <span>Home</span></a>
-      </li>
-      <li class="nav-item">
-        <a href="/about" class="nav-link scrollto <%= (title === 'About') ? 'active' : '' %>"><i class="bx bx-user"></i> <span>About</span></a>
-      </li>
-      </li>
-      <li class="nav-item">
-        <a href="/projects" class="nav-link scrollto <%= (title === 'Projects') ? 'active' : '' %>"><i class="bx bx-user"></i> <span>Projects</span></a>
-      </li>
-      <li class="nav-item">
-        <a href="/services" class="nav-link scrollto <%= (title === 'Services') ? 'active' : '' %>"><i class="bx bx-user"></i> <span>Services</span></a>
-      </li>
-      <li class="nav-item">
-        <a href="/contact" class="nav-link scrollto <%= (title === 'Contact') ? 'active' : '' %>"><i class="bx bx-user"></i> <span>Contact me</span></a>
-      </li>
-    </ul>
+  <div class="container">
+    <div class=" collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="/" class="nav-link scrollto <%= (title === 'Home') ? 'active' : '' %>"><i class="bx bx-home"></i>
+            <span>Home</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="/about" class="nav-link scrollto <%= (title === 'About') ? 'active' : '' %>"><i
+              class="bx bx-user"></i> <span>About</span></a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a href="/projects" class="nav-link scrollto <%= (title === 'Projects') ? 'active' : '' %>"><i
+              class="bx bx-user"></i> <span>Projects</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="/services" class="nav-link scrollto <%= (title === 'Services') ? 'active' : '' %>"><i
+              class="bx bx-user"></i> <span>Services</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="/contact" class="nav-link scrollto <%= (title === 'Contact') ? 'active' : '' %>"><i
+              class="bx bx-user"></i> <span>Contact me</span></a>
+        </li>
+      </ul>
+    </div>
   </div>
+
 </nav>
 <div class="banner">
   <div class="container logo-slogan">
     <div class="logo">
-      <img src="assets/images/logo.png" height="100" alt="logo">
+      <img src="assets/images/logo.png" id="logo" height="150" alt="logo">
     </div>
     <div class="banner-text">
       <div class="slogan">
