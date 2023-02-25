@@ -1,0 +1,41 @@
+<%- include ../../layouts/header.ejs %>
+    <%- include ../../layouts/nav_bar.ejs %>
+        <!-- Main Content -->
+        <main class="container">
+
+            <!-- Edit Business Contact Section -->
+            <section id="editBusinessContact" class="editBusinessContact">
+                <div class="section-title">
+                    <h2>Edit Business Contact</h2>
+                </div>
+
+                <form method="POST" autocomplete="off">
+                    <input type="hidden" name="_method" value="PUT">
+
+                    <fieldset class="form-group">
+                        <label for="contactName">Contact Name:</label>
+                        <input type="text" class="form-control" name="contactName" value="<%= businessContact.contactName %>"
+                            id="name" required>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <label for="contactNumber">Contact Number:</label>
+                        <input type="tel" class="form-control" name="contactNumber"
+                            value="<%= businessContact.contactNumber %>" id="contactNumber" required>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <label for="emailAddress">Email Address:</label>
+                        <input type="email" class="form-control" name="emailAddress"
+                            value="<%= businessContact.emailAddress %>" id="emailAddress" >
+                    </fieldset>
+
+                    <fieldset class="form-group text-right">
+                        <input type="submit" class="btn btn-success" value="Save Contact">
+                        <a href="/business-list"><input type="button" class="btn btn-warning" value="Cancel"></a>
+                    </fieldset>
+                </form>
+            </section>
+
+        </main>
+        <%- include ../../layouts/footer.ejs %>

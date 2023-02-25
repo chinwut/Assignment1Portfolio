@@ -17,20 +17,33 @@
         </li>
         <li class="nav-item">
           <a href="/about" class="nav-link scrollto <%= (title === 'About') ? 'active' : '' %>"><i
-              class="bx bx-user"></i> <span>About</span></a>
+              class="bx bx-file-blank"></i> <span>About</span></a>
         </li>
         </li>
         <li class="nav-item">
           <a href="/projects" class="nav-link scrollto <%= (title === 'Projects') ? 'active' : '' %>"><i
-              class="bx bx-user"></i> <span>Projects</span></a>
+              class="bx bx-book-content"></i> <span>Projects</span></a>
         </li>
         <li class="nav-item">
           <a href="/services" class="nav-link scrollto <%= (title === 'Services') ? 'active' : '' %>"><i
-              class="bx bx-user"></i> <span>Services</span></a>
+              class="bx bx-server"></i> <span>Services</span></a>
         </li>
         <li class="nav-item">
           <a href="/contact" class="nav-link scrollto <%= (title === 'Contact') ? 'active' : '' %>"><i
               class="bx bx-user"></i> <span>Contact me</span></a>
+        </li>
+        <li class="nav-item">
+          <%if(typeof displayName=='string' &&displayName){%>
+            <div class="welcome-logout">
+              <%if(typeof displayName=='string' && displayName){%>
+                <span>Welcome, <b><%=displayName%></b></span>
+              <%} %>
+              <a href="/logout" class="nav-link logout scrollto"><i class="bx bx-log-out-circle"></i><span>Logout</span></a>
+            </div>
+            <%} else {%>
+              <a href="/login" class="nav-link scrollto <%= (title === 'Login') ? 'active' : '' %>"><i
+                  class="bx bx-log-in-circle"></i> <span>Login</span></a>
+              <%}%>
         </li>
       </ul>
     </div>
@@ -42,7 +55,7 @@
   <div class="container logo-slogan">
     <div class="logo">
       <div class="logo-shadow">
-        <img src="assets/images/logo.png" id="logo" height="150" alt="logo">
+        <img src="../assets/images/logo.png" id="logo" height="150" alt="logo">
       </div>
     </div>
     <div class="banner-text">

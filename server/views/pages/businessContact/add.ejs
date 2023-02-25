@@ -1,0 +1,36 @@
+<%- include ../../layouts/header.ejs %>
+    <%- include ../../layouts/nav_bar.ejs %>
+        <!-- Main Content -->
+        <main class="container">
+
+            <!-- Add Business Contact Section -->
+            <section id="addBusinessContact" class="addBusinessContact">
+                <div class="section-title">
+                    <h2>Add Business Contact</h2>
+                </div>
+
+                <form method="POST" autocomplete="off">
+                    <fieldset class="form-group">
+                        <label for="name">Contact Name:</label>
+                        <input type="text" class="form-control" name="contactName" placeholder="Enter contact name" id="contactName" required>
+                    </fieldset>
+                    
+                    <fieldset class="form-group">
+                        <label for="contactNumber">Contact Number:</label>
+                        <input type="tel" class="form-control" name="contactNumber" placeholder="Enter contact number" id="contactNumber" required>
+                    </fieldset>
+                    
+                    <fieldset class="form-group">
+                        <label for="emailAddress">Email Address:</label>
+                        <input type="email" class="form-control" name="emailAddress" placeholder="Enter email address" id="emailAddress" required>
+                    </fieldset>
+
+                    <fieldset class="form-group text-right">
+                        <input type="submit" class="btn btn-success" value="Add Contact">
+                        <a href="/business-list"><input type="button" class="btn btn-warning" value="Cancel"></a>
+                    </fieldset>
+                </form>
+            </section>
+
+        </main>
+        <%- include ../../layouts/footer.ejs %>

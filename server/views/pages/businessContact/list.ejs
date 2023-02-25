@@ -1,0 +1,49 @@
+<%- include ../../layouts/header.ejs %>
+    <%- include ../../layouts/nav_bar.ejs %>
+        <!-- Main Content -->
+        <main class="container">
+            <!-- Business Contact List Section -->
+            <section id="businessContactList" class="businessContactList">
+              <div class="section-title">
+                <h2>Business Contact List</h2>
+              </div>
+              <table class="table table-striped table-hover">
+                <thead class="thead-dark">
+                  <tr>
+                    <th>Contact Name</th>
+                    <th>Contact Number</th>
+                    <th>Email Address</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% businessContactList.forEach((businessContact) => { %>
+                  <tr>
+                    <td><%= businessContact.contactName %></td>
+                    <td><%= businessContact.contactNumber %></td>
+                    <td><%= businessContact.emailAddress %></td>
+                    <td>
+                      <a
+                        href="/edit-business/<%= businessContact._id %>"
+                        class="btn btn-secondary"
+                        >Edit</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        href="/delete-business/<%= businessContact._id %>"
+                        class="btn btn-danger"
+                        >Delete</a
+                      >
+                    </td>
+                  </tr>
+                  <% }); %>
+                </tbody>
+              </table>
+              <form action="/add-business" method="GET">
+                <input type="submit" class="btn btn-success" value="Add Business Contact">
+              </form>
+            </section>
+          </main>
+                <%- include ../../layouts/footer.ejs %>
