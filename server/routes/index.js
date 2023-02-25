@@ -18,8 +18,8 @@ router.get('/services', userController.displayPage('Services', 'services'));
 router.get('/contact', userController.displayPage('Contact', 'contact'));
 router.get('/login', userController.displayLoginPage);
 router.post('/login', userController.processLoginPage);
-router.get('/register', userController.displayRegisterPage);
-router.post('/register', userController.processRegisterPage);
+// router.get('/register', userController.displayRegisterPage);
+// router.post('/register', userController.processRegisterPage);
 router.get('/logout', userController.performLogout);
 
 router.get('/business-list', businessContactController.displayBusinessContactList);
